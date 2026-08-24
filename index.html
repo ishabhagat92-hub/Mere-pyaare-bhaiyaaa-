@@ -1,1 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bhaiya 🐒</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+<style>
+body{margin:0;font-family:Poppins,sans-serif;background:#fff0f5}
+.page{display:none;min-height:100vh;justify-content:center;align-items:center;flex-direction:column;padding:20px;text-align:center}
+.page.active{display:flex}
+.btn{padding:12px 25px;background:#ff4d6d;color:#fff;border:none;border-radius:25px;margin-top:15px}
+.letter{background:#fff;padding:22px;border-radius:15px;max-width:540px;text-align:left;line-height:1.7}
+.jealous{background:#ffe4ec;border:2px dashed #ff8fab;border-radius:15px;padding:12px;text-align:center;color:#ff4d6d;font-family:'Dancing Script',cursive;font-size:20px;margin:12px 0}
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:10px;max-width:350px;width:90%}
+.gallery img{width:100%;height:150px;object-fit:cover;border-radius:12px}
+</style>
+</head>
+<body>
 
+<div id="p1" class="page active">
+<h1 style="font-family:'Dancing Script',cursive;color:#ff4d6d">Heyyy Mere Pyaare Bhaiyaaa! 🐒</h1>
+<button class="btn" onclick="show(2)">Chalo Dekhte Hai ✨</button>
+</div>
+
+<div id="p2" class="page">
+<h1>Yaadein 📸</h1>
+<div class="gallery"><img src="1.jpg"><img src="2.jpg"><img src="3.jpg"><img src="4.jpg"><img src="5.jpg"><img src="6.jpg"><img src="7.jpg"><img src="8.jpg"></div>
+<button class="btn" onclick="show(3)">Letter 💌</button>
+</div>
+
+<div id="p3" class="page">
+<div class="letter">
+To my pyaare bhaiya 🐒<br><br>
+Sabse pehle Happy Rakshabandhan...<br><br>
+Uu rr the bestest one.. bhale pta hai mereko mai nai hu... Lekin uu rr very awesome person, special extraordinary edition of my life jo DPS jake mereko mil gya ...<br><br>
+Jab DPS gyi thi kabhi sochi nai thi ki aisa Bhai mereko mil jayega ... Bahut bahut Shukriya Dhanyawad thank you so much for becoming my special one part time brother part time bestfriend.. jisko mai sab kuch bol saku ...<br><br>
+
+From aapki pyaari behna<br>
+<b>Ishaaaa🧚🏻😎</b><br><br>
+
+<div class="jealous">
+💖 Jyada kisi se jealous feel mat kiya karo yrr ... Aapko aapka priority pta hai na mere liye... Phir bhi .... 🥺 💖
+</div>
+
+Mereko bhul to nai jaoge na ... Aise kaise bhuloge mai bhulne hi nai dungiiii 😎😉
+</div>
+</div>
+
+<script>
+function show(n){document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));document.getElementById('p'+n).classList.add('active')}
+</script>
+</body>
+</html>
